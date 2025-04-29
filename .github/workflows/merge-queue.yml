@@ -13,3 +13,10 @@ on:
       - .github/merge-group.yml
       - .github/merge-group-*.yml
 
+jobs:
+  example-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
