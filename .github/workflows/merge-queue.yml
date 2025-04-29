@@ -1,6 +1,15 @@
-name: learn-github-actions
-on:
-  pull_request:
-    branches: [ "master" ]
+name: merge-queue
+run-name: ${{ github.actor }} is running a merge queue
+on: 
   merge_group:
     types: [checks_requested]
+    branches:
+      - master
+    paths:
+      - .github/workflows/merge-queue.yml
+      - .github/workflows/merge-queue-*.yml
+      - .github/merge-queue.yml
+      - .github/merge-queue-*.yml
+      - .github/merge-group.yml
+      - .github/merge-group-*.yml
+
