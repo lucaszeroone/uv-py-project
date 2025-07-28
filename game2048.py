@@ -5,7 +5,6 @@ import sys
 # 初始化pygame
 pygame.init()
 
-# 游戏常量
 SCREEN_SIZE = 500
 GRID_SIZE = 4
 CELL_SIZE = SCREEN_SIZE // GRID_SIZE
